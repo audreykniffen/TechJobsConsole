@@ -38,6 +38,7 @@ namespace TechJobsConsole
             return values;
         }
 
+        // go through each line and try to understand why it works that way and what each line is doing. use this to understand last task
         public static List<Dictionary<string, string>> FindByColumnAndValue(string column, string value)
         {
             // load data, if not already loaded
@@ -138,5 +139,33 @@ namespace TechJobsConsole
 
             return rowValues.ToArray();
         }
+
+        public static List<Dictionary<string, string>> FindByValue(string value)
+        {
+
+            List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
+
+            LoadData();
+
+            foreach (Dictionary<string, string> row in AllJobs)
+            {
+                StringBuilder st = new StringBuilder();
+
+                foreach (string column in row.Values)
+                {
+                    st.Append(column);
+                }
+
+                string aValue = st.ToString().ToLower();
+
+                if (aValue.Contains(value.ToLower()))
+                {
+                    jobs.Add(row);
+                }
+            }
+
+            return jobs;
+        }
     }
 }
+  

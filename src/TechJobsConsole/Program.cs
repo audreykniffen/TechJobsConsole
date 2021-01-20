@@ -57,13 +57,14 @@ namespace TechJobsConsole
                     // What is their search term?
                     Console.WriteLine("\nSearch term: ");
                     string searchTerm = Console.ReadLine();
+                    searchTerm = searchTerm.ToLower();
 
                     List<Dictionary<string, string>> searchResults;
 
                     // Fetch results
                     if (columnChoice.Equals("all"))
                     {
-                        Console.WriteLine("Search all fields not yet implemented.");
+                        Console.WriteLine("Search all fields not yet implemented."); // have to make change fo find by value cna be called
                     }
                     else
                     {
@@ -116,9 +117,27 @@ namespace TechJobsConsole
             return choiceKeys[choiceIdx];
         }
 
-        private static void PrintJobs(List<Dictionary<string, string>> someJobs)
+        private static void PrintJobs(List<Dictionary<string, string>> someJobs) //this list holds dictionaries for each job on the entire csv
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
-        }
+          foreach (Dictionary<string, string> job in someJobs)
+          {
+                    Console.WriteLine("*****");
+                    foreach (KeyValuePair<string, string> section in job)
+                {
+                    Console.WriteLine("{0}: {1}",
+                        section.Key, section.Value);
+                }
+                Console.WriteLine("***** \n");
+                //Console.WriteLine(Environment.NewLine);
+                }
+            }
+
+
+        /* {public static void PrintDict<K,V>(Dictionary<K,V> dict)
+         * {foreach (KeyValuePair<K,V> entry in dict)
+         * {Console.WriteLine(entry.Key + " : " + entry.Value);
+         * }}public static void Main(){Dictionary<string */
+
+        // Console.WriteLine("PrintJobs is not implemented yet");
     }
 }
