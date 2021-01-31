@@ -1,0 +1,13 @@
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/job_data.csv
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/TechJobsConsole.deps.json
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/TechJobsConsole.runtimeconfig.json
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/TechJobsConsole.runtimeconfig.dev.json
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/TechJobsConsole.dll
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp3.1/TechJobsConsole.pdb
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.csprojAssemblyReference.cache
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.AssemblyInfoInputs.cache
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.AssemblyInfo.cs
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.csproj.CoreCompileInputs.cache
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.dll
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.pdb
+/Users/audreykniffen/codecamp2020m/visualstudio/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp3.1/TechJobsConsole.genruntimeconfig.cache
