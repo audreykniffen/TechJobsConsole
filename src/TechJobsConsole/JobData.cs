@@ -139,33 +139,30 @@ namespace TechJobsConsole
 
             return rowValues.ToArray();
         }
-
-        public static List<Dictionary<string, string>> FindByValue(string value)
+        public static List<Dictionary<string, string>> FindByValue(string value)// I create it, I name it... i guess not....
         {
-
-            List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
-
             LoadData();
-
+            List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
             foreach (Dictionary<string, string> row in AllJobs)
             {
-                StringBuilder st = new StringBuilder();
-
-                foreach (string column in row.Values)
+                foreach (KeyValuePair<string, string> entry in row)
                 {
-                    st.Append(column);
-                }
+                    if ((entry.Value.ToLower()).Contains(value.ToLower()))
+                    {
+                   
+                        {
+                            jobs.Add(row);
+                        }
 
-                string aValue = st.ToString().ToLower();
-
-                if (aValue.Contains(value.ToLower()))
-                {
-                    jobs.Add(row);
+                        }
+                    }
                 }
             }
 
-            return jobs;
+                return jobs;  //WTF so that doesn't work.........
+
         }
     }
 }
-  
+
+
