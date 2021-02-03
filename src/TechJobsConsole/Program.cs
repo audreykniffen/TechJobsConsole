@@ -122,25 +122,29 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs) //this list holds dictionaries for each job on the entire csv
         {
-          foreach (Dictionary<string, string> job in someJobs)
-          {
+            if (someJobs.Count == 0)
+            {
+                Console.WriteLine("No jobs found");
+            }
+            else
+            {
+
+                foreach (Dictionary<string, string> job in someJobs)
+                {
                     Console.WriteLine("*****");
                     foreach (KeyValuePair<string, string> section in job)
-                {
-                    Console.WriteLine("{0}: {1}",
-                        section.Key, section.Value);
+                    {
+                        Console.WriteLine("{0}: {1}",
+                            section.Key, section.Value);
+                    }
+                    Console.WriteLine("***** \n");
+                    //Console.WriteLine(Environment.NewLine);
                 }
-                Console.WriteLine("***** \n");
-                //Console.WriteLine(Environment.NewLine);
-                }
+
             }
+        }
 
-
-        /* {public static void PrintDict<K,V>(Dictionary<K,V> dict)
-         * {foreach (KeyValuePair<K,V> entry in dict)
-         * {Console.WriteLine(entry.Key + " : " + entry.Value);
-         * }}public static void Main(){Dictionary<string */
-
-        // Console.WriteLine("PrintJobs is not implemented yet");
+  
     }
 }
+ 
