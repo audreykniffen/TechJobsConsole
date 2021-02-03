@@ -139,7 +139,7 @@ namespace TechJobsConsole
 
             return rowValues.ToArray();
         }
-        public static List<Dictionary<string, string>> FindByValue(string value) // I create it, I name it... i guess not....
+        public static List<Dictionary<string, string>> FindByValue(string value) 
         {
             LoadData();
             List<Dictionary<string, string>> jobs = new List<Dictionary<string, string>>();
@@ -147,20 +147,30 @@ namespace TechJobsConsole
 
             foreach (Dictionary<string, string> row in AllJobs)
             {
-                foreach (KeyValuePair<string, string> entry in row)
+                foreach (KeyValuePair<string, string> item in row)
                 {
-                    if ((entry.Value.ToLower()).Contains(value.ToLower()))
+                    if ((item.Value.ToLower()).Contains(value.ToLower()))
                     {
 
-                       jobs.Add(row);
+                        jobs.Add(row);
+
+                        break; 
+                        //then break
+                       // end a for loop so it doesnt post multiple returns of the same jobs
+                       //break statement
                     }
+
+            
+
 
                 }
 
 
-                return jobs;
-      
-                
+
+            }
+
+
+            return jobs;
         }
     }
 }
